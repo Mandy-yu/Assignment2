@@ -46,4 +46,6 @@ then
     echo $TERM
     esearch -db pubmed -query "$TERM" | efetch -format abstract > pubmed.txt
     wordcloud_cli --text pubmed.txt --imagefile wordcloud.png
+else
+    echo "Input 3 key words!"
 fi
